@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: transparent;
+  margin: 0 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 1px;
+  border-radius: 1px;
+  background: darkgrey;
+}
