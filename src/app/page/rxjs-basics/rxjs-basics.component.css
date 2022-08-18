@@ -1,0 +1,13 @@
+.rxjs-basics {
+  background: #202124;
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rxjs-basics__heading{
+  color: #f3f3f3;
+  font: normal normal bold 30px/15px Lato;
+}

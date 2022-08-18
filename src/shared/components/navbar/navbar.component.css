@@ -1,0 +1,31 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+}
+
+.navbar__content-1 {
+  width: 30%;
+}
+
+.navbar__content-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+
+.navbar__heading {
+  font: normal normal bold 20px/15px Lato;
+  text-decoration: none;
+}
+
+.navbar__heading:active {
+  color: #000;
+}
+
+.navbar__text {
+  font: normal normal normal 18px/15px Lato;
+  margin-left: 5px;
+}

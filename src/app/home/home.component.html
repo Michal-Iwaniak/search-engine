@@ -1,9 +1,12 @@
+<app-navbar></app-navbar>
+
 <div class="home__container">
   <div class="home__content">
     <h1 class="home__heading">WYSZUKIWARKA</h1>
     <div class="home__input-btn">
       <label>
-        <input [ngClass]="{'home__search-input-focus' : searches.length }" #searchInput (input)="search($any($event.target).value)" class="home__search-input" placeholder="Wyszukaj"
+        <input [ngClass]="{'home__search-input-focus' : searches.length }" #searchInput
+               (input)="search($any($event.target).value)" class="home__search-input" placeholder="Wyszukaj"
                type="search">
       </label>
       <div>
@@ -11,7 +14,8 @@
       </div>
     </div>
     <ul class="home__list">
-      <li (click)="searchInput.value = search.name" *ngFor="let search of searches" class="home__item">{{search.name}}</li>
+      <li (click)="searchInput.value = search.name" *ngFor="let search of searches"
+          class="home__item">{{search.name}}</li>
     </ul>
   </div>
 </div>

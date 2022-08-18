@@ -1,0 +1,26 @@
+<mat-toolbar class="navbar">
+  <div class="navbar__content-1">
+    <a [routerLink]="'/'" class="navbar__heading">AKADEMIA ANGULAR</a>
+  </div>
+  <div class="navbar__content-2">
+    <button (click)="onAngularFundamentalsClick()" mat-flat-button class="example-icon favorite-icon">
+      <mat-icon>import_contacts</mat-icon>
+      <span class="navbar__text">ANGULAR FUNDAMENTALS</span>
+    </button>
+    <button (click)="onAngularProClick()" mat-flat-button class="example-icon">
+      <mat-icon>grade</mat-icon>
+      <span class="navbar__text">ANGULAR PRO</span>
+    </button>
+    <button (click)="onRxjsBasicsClick()" mat-flat-button class="example-icon">
+      <mat-icon>poll</mat-icon>
+      <span class="navbar__text">RXJS BASICS</span>
+    </button>
+    <button (click)="onRxjsMasterclassClick()" mat-flat-button class="example-icon">
+      <mat-icon>whatshot</mat-icon>
+      <span class="navbar__text">RXJS MASTERCLASS</span>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
