@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-angular-fundamentals',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AngularFundamentalsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  onTasks() {
+    this.router.navigate(['/to-do-list'])
+  }
 }

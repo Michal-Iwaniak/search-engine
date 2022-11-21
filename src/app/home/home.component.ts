@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {SearchService} from "../../services/search.service";
+import {Router} from "@angular/router";
 
 export interface Search {
   name: string;
@@ -17,6 +18,7 @@ export class HomeComponent implements OnInit {
 
 
   constructor(private http: HttpClient,
+              private router: Router,
               private searchService: SearchService) {
   }
 
@@ -33,5 +35,9 @@ export class HomeComponent implements OnInit {
 
   goToSearchResults(phrase: string) {
     window.open('https://www.google.pl/search?q=' + phrase, '_blank');
+  }
+
+  onTourHeroesClick() {
+    this.router.navigate(['/heroes'])
   }
 }

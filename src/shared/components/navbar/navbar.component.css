@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 70%;
 }
 
 .navbar__heading {
@@ -25,6 +25,13 @@
   color: #000;
 }
 
+.navbar_btn{
+  margin-left: 10px;
+
+}
+.navbar_btn:hover{
+  background-color: #e8e8e8;
+}
 .navbar__text {
   font: normal normal normal 18px/15px Lato;
   margin-left: 5px;

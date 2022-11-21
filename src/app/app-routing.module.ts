@@ -1,5 +1,8 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+import {TourHeroesComponent} from "./page/Tour of Heroes/tour-heroes/tour-heroes.component";
+import {DashboardComponent} from "./page/Tour of Heroes/dashboard/dashboard.component";
+import {HeroDetailComponent} from "./page/Tour of Heroes/hero-detail/hero-detail.component";
 
 
 const routes: Routes = [
@@ -27,6 +30,22 @@ const routes: Routes = [
   {
     path: 'rxjs-masterclass',
     loadChildren: () => import('./page/rxjs-masterclass/rxjs-masterclass.module').then(m => m.RxjsMasterclassModule)
+  },
+  {
+    path: 'to-do-list',
+    loadChildren: () => import('./page/to-do-list/to-do-list.module').then(m => m.ToDoListModule)
+  },
+  {
+    path: 'heroes',
+    component: TourHeroesComponent
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent
+  },
+  {
+    path: 'detail/:id',
+    component: HeroDetailComponent
   }
 ];
 

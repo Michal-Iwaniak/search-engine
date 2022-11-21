@@ -1,0 +1,36 @@
+.tour-heroes_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: #e8e8e8;
+}
+
+.tour-heroes_heading {
+  font: normal normal bold 60px/100px Lato;
+  color: #202124;
+  margin-bottom: 60px;
+}
+
+.tour-heroes_btns {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.tour-heroes_btn {
+  font: normal normal bold 40px/15px Lato;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 40px 60px;
+  background: #929292;
+  margin: 20px;
+  color: #FFFFFF;
+  transition: background .7s ease;
+}
+
+.tour-heroes_btn:hover {
+  background: #555555;
+}
