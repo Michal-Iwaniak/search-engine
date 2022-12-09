@@ -1,0 +1,24 @@
+<div class="col s12">
+  <h5 class="title">{{title}}</h5>
+
+  <div class="collection">
+    <p *ngFor="let quotation of quotes" class="collection-item">
+      <span class="blue lighten-4 badge">{{quotation.votes}}</span>
+      {{quotation.sentence}}<br>
+      <span class="blue-text">{{quotation.author}}</span>
+    </p>
+  </div>
+
+  <!--    <h5>Najgorzej ocenione</h5>-->
+
+  <!--    <div class="collection">-->
+  <!--      <ng-container *ngFor="let quotation of quotes">-->
+  <!--        <p class="collection-item" *ngIf="quotation.votes < 0">-->
+  <!--          <span class="blue lighten-4 badge">{{quotation.votes}}</span>-->
+  <!--          {{quotation.sentence}}<br>-->
+  <!--          <span class="blue-text">{{quotation.author}}</span>-->
+  <!--        </p>-->
+  <!--      </ng-container>-->
+  <!--    </div>-->
+
+</div>

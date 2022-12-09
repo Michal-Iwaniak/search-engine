@@ -37,7 +37,4 @@ export class HomeComponent implements OnInit {
     window.open('https://www.google.pl/search?q=' + phrase, '_blank');
   }
 
-  onTourHeroesClick() {
-    this.router.navigate(['/heroes'])
-  }
 }

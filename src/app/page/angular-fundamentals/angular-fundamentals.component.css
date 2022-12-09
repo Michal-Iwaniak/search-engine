@@ -4,14 +4,44 @@
   height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 40px;
+  padding-top: 40px;
 }
 
-.angular-fundamentals__heading{
+.angular-fundamentals__heading {
   color: #f3f3f3;
   font: normal normal bold 30px/15px Lato;
+}
+
+.task-content {
+  width: 90%;
+}
+
+.task-heading {
+  color: #FFFFFF;
+  font: normal normal bold 21px/15px Lato;
+  margin-bottom: 30px;
+}
+
+.task-btns {
+  display: flex;
+  gap: 25px;
+}
+
+.btn-todo {
+  min-width: 150px;
+  height: 80px;
+  font: normal normal bold 20px/15px Lato;
+  cursor: pointer;
+  background-color: coral;
+  color: #ffffff;
+  transition: background-color .7s ease;
+}
+
+.btn-todo:hover {
+  background-color: #ff6e33;
+
 }
 
 

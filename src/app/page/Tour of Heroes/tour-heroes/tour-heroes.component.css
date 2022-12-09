@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: calc(100% - 60px);
   width: 100%;
   background: #e8e8e8;
 }
@@ -11,13 +11,13 @@
 .tour-heroes_heading {
   font: normal normal bold 60px/100px Lato;
   color: #202124;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .tour-heroes_btns {
-  height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .tour-heroes_btn {

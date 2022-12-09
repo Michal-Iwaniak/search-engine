@@ -33,7 +33,11 @@ const routes: Routes = [
   },
   {
     path: 'to-do-list',
-    loadChildren: () => import('./page/to-do-list/to-do-list.module').then(m => m.ToDoListModule)
+    loadChildren: () => import('./page/angular-fundamentals/to-do-list/to-do-list.module').then(m => m.ToDoListModule)
+  },
+  {
+    path: 'best-quotes',
+    loadChildren: () => import('./page/angular-fundamentals/best-quotes/best-quotes.module').then(m => m.BestQuotesModule)
   },
   {
     path: 'heroes',

@@ -22,3 +22,9 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.add-button {
+  position: absolute !important;
+  right: 0;
+  top: -22px;
+}

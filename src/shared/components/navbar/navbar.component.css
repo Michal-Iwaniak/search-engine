@@ -19,20 +19,32 @@
 .navbar__heading {
   font: normal normal bold 20px/15px Lato;
   text-decoration: none;
+  color: #dd1b16;
 }
 
 .navbar__heading:active {
   color: #000;
 }
 
-.navbar_btn{
+.navbar_btn {
   margin-left: 10px;
-
+  background-color: #ececec;
+  box-shadow: 0 0 6px 0 rgba(66, 68, 90, 1);
+  transition: background-color .7s ease;
 }
-.navbar_btn:hover{
-  background-color: #e8e8e8;
+
+.navbar_btn:hover {
+  background-color: #FFF;
+}
+
+.navbar_icon{
+  width: 20px;
+  height: 22px;
+  font-size: 20px;
 }
 .navbar__text {
-  font: normal normal normal 18px/15px Lato;
+  font: normal normal bold 17px/15px Lato;
   margin-left: 5px;
 }
+
+

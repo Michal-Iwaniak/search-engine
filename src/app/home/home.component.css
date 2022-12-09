@@ -23,7 +23,7 @@
 
 .home__input-btn {
   display: flex !important;
-  align-items: flex-start!important;
+  align-items: flex-start !important;
   margin-top: 50px !important;
 }
 
@@ -37,7 +37,7 @@
   border: none !important;
   background-color: #fff !important;
   box-sizing: border-box !important;
-  margin: 0!important;
+  margin: 0 !important;
 }
 
 .home__search-input:focus-visible {

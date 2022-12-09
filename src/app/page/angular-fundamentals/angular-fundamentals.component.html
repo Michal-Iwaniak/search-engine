@@ -3,12 +3,24 @@
 
   <h1 class="angular-fundamentals__heading">ANGULAR FUNDAMENTALS</h1>
 
-  <div>
-    <button mat-flat-button>TEORIA</button>
-  </div>
-  
-  <div>
-    <button (click)="onTasks()" mat-flat-button>ZADANIA</button>
+  <div class="task-content">
+    <h4 class="task-heading">ZADANIA</h4>
+
+    <div class="task-btns">
+      <div>
+        <button [routerLink]="'/to-do-list'" class="btn-todo" mat-flat-button>TODO</button>
+      </div>
+
+      <div>
+        <button [routerLink]="'/best-quotes'" class="btn-todo" mat-flat-button>BEST QUOTES</button>
+      </div>
+
+      <div>
+        <button [routerLink]="'/heroes'" class="btn-todo" mat-flat-button>TOUR OF HEROES</button>
+      </div>
+
+    </div>
+
   </div>
 
 </div>

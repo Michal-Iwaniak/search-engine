@@ -7,10 +7,15 @@ import {HomeComponent} from './home/home.component';
 import {AppRoutingModule} from './app-routing.module';
 import {MaterialModule} from "../shared/material.module";
 import {SharedModule} from "../shared/shared.module";
-import { TourHeroesComponent } from './page/Tour of Heroes/tour-heroes/tour-heroes.component';
-import { DashboardComponent } from './page/Tour of Heroes/dashboard/dashboard.component';
-import { HeroDetailComponent } from './page/Tour of Heroes/hero-detail/hero-detail.component';
-import { MessagesComponent } from './page/Tour of Heroes/messages/messages.component';
+import {TourHeroesComponent} from './page/Tour of Heroes/tour-heroes/tour-heroes.component';
+import {DashboardComponent} from './page/Tour of Heroes/dashboard/dashboard.component';
+import {HeroDetailComponent} from './page/Tour of Heroes/hero-detail/hero-detail.component';
+import {MessagesComponent} from './page/Tour of Heroes/messages/messages.component';
+import localePl from '@angular/common/locales/pl';
+import {registerLocaleData} from "@angular/common";
+import {FormsModule} from "@angular/forms";
+
+registerLocaleData(localePl);
 
 @NgModule({
   declarations: [
@@ -27,6 +32,7 @@ import { MessagesComponent } from './page/Tour of Heroes/messages/messages.compo
     HttpClientModule,
     SharedModule,
     MaterialModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
